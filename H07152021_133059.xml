@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResultViews>
+<ResultView Tool='Train Deep Learning Model'>
+<CommandLine>TrainDeepLearningModel_ia D:\Lizbeth_PT\REEU_Purdue_Summer21\DeepLearning\Chips\CornSamples_Squares D:\Lizbeth_PT\REEU_Purdue_Summer21\DeepLearning\Models\Corn_SSD_25_SquareSamples 25 &apos;Single Shot Detector - Object detection&apos; 2 &quot;grids #;zooms 1.0;ratios &apos;[1.0, 1.0]&apos;;chip_size 256&quot; # ResNet-34 # 10 STOP_TRAINING FREEZE_MODEL</CommandLine>
+<ToolSource>c:\program files\arcgis\pro\Resources\ArcToolbox\toolboxes\Image Analyst Tools.tbx\Deep Learning\TrainDeepLearningModel</ToolSource>
+<StartTime>Thursday, July 15, 2021 1:31:00 PM</StartTime>
+<Parameters>
+<Inputs>
+<Parameter Label='Input Training Data' Type='Dataset'>D:\Lizbeth_PT\REEU_Purdue_Summer21\DeepLearning\Chips\CornSamples_Squares</Parameter>
+<Parameter Label='Max Epochs' Type='Scalar'>25</Parameter>
+<Parameter Label='Model Type' Type='Scalar'>SSD</Parameter>
+<Parameter Label='Batch Size' Type='Scalar'>2</Parameter>
+<Parameter Label='Model Arguments' Type='Scalar'>grids #;zooms 1.0;ratios &apos;[1.0, 1.0]&apos;;chip_size 256</Parameter>
+<Parameter Label='Backbone Model' Type='Scalar'>RESNET34</Parameter>
+<Parameter Label='Validation %' Type='Scalar'>10</Parameter>
+<Parameter Label='Stop when model stops improving' Type='Scalar'>true</Parameter>
+<Parameter Label='Freeze Model' Type='Scalar'>true</Parameter>
+</Inputs>
+<Outputs>
+<Parameter Label='Output Model' Type='Dataset'>D:\Lizbeth_PT\REEU_Purdue_Summer21\DeepLearning\Models\Corn_SSD_25_SquareSamples</Parameter>
+</Outputs>
+</Parameters>
+<Environments>
+<Environment Label='Auto Commit'>1000</Environment>
+<Environment Label='GPU ID'>0</Environment>
+<Environment Label='Scratch Workspace'>D:\Lizbeth_PT\REEU_Purdue_Summer21\DeepLearning\Deep_Learning_GIS_Project\Deep_Learning_GIS_Project.gdb</Environment>
+<Environment Label='Minimize memory use during analysis on terrains'>false</Environment>
+<Environment Label='Compression'>LZ77</Environment>
+<Environment Label='Coincident Points'>MEAN</Environment>
+<Environment Label='Use Detailed Aggregation'>false</Environment>
+<Environment Label='Random Number Generator'>0 ACM599</Environment>
+<Environment Label='Raster Statistics'>STATISTICS 1 1</Environment>
+<Environment Label='Transfer Geodatabase Field Properties'>false</Environment>
+<Environment Label='Cell Size Projection Method'>CONVERT_UNITS</Environment>
+<Environment Label='Transfer field domain descriptions'>false</Environment>
+<Environment Label='Maintain Attachments'>true</Environment>
+<Environment Label='Resample'>NEAREST</Environment>
+<Environment Label='Match Multidimensional Variable'>true</Environment>
+<Environment Label='Output has Z Values'>Same As Input</Environment>
+<Environment Label='Maintain fully qualified field names'>true</Environment>
+<Environment Label='Tile Size'>128 128</Environment>
+<Environment Label='Pyramid'>PYRAMIDS -1 NEAREST DEFAULT 75 NO_SKIP NO_SIPS</Environment>
+<Environment Label='Union Dimension'>false</Environment>
+<Environment Label='Default TIN Storage Version'>CURRENT</Environment>
+<Environment Label='NoData'>NONE</Environment>
+<Environment Label='Cell Size'>MAXOF</Environment>
+<Environment Label='Output has M Values'>Same As Input</Environment>
+<Environment Label='Cell Alignment'>DEFAULT</Environment>
+<Environment Label='Maintain Spatial Index'>false</Environment>
+<Environment Label='Preserve Global IDs'>false</Environment>
+<Environment Label='Current Workspace'>D:\Lizbeth_PT\REEU_Purdue_Summer21\DeepLearning\Deep_Learning_GIS_Project\Deep_Learning_GIS_Project.gdb</Environment>
+</Environments>
+<Messages>
+<Message Type='Informative'>Start Time: Thursday, July 15, 2021 1:31:00 PM</Message>
+<Message Type='Informative'>CPU is being used for the training</Message>
+<Message Type='Informative'>Learning Rate - slice(0.000363078054770101, 0.00363078054770101, None)</Message>
+<Message Type='Informative'>Training Loss		Validation Loss</Message>
+<Message Type='Informative'>27.025306701660156	20.43377113342285</Message>
+<Message Type='Informative'>33.35752487182617	21.283010482788086</Message>
+<Message Type='Informative'>28.515592575073242	21.57732391357422</Message>
+<Message Type='Informative'>35.70825958251953	239.58465576171875</Message>
+<Message Type='Informative'>27.037824630737305	116.75675201416016</Message>
+<Message Type='Informative'>39.20478439331055	783.4039916992188</Message>
+<Message Type='Informative'>38.19881057739258	20.072912216186523</Message>
+<Message Type='Informative'>26.177635192871094	18.382415771484375</Message>
+<Message Type='Informative'>22.40571403503418	17.425878524780273</Message>
+<Message Type='Informative'>26.89358901977539	16.300352096557617</Message>
+<Message Type='Informative'>25.498929977416992	16.077308654785156</Message>
+<Message Type='Informative'>27.010753631591797	17.26930046081543</Message>
+<Message Type='Informative'>25.130876541137695	15.600499153137207</Message>
+<Message Type='Informative'>31.383892059326172	16.418596267700195</Message>
+<Message Type='Informative'>24.442350387573242	15.26983642578125</Message>
+<Message Type='Informative'>24.10081672668457	15.034682273864746</Message>
+<Message Type='Informative'>25.39626121520996	14.536450386047363</Message>
+<Message Type='Informative'>23.28352165222168	14.795909881591797</Message>
+<Message Type='Informative'>23.02411460876465	14.057734489440918</Message>
+<Message Type='Informative'>28.37607765197754	15.781693458557129</Message>
+<Message Type='Informative'>22.479511260986328	13.91643238067627</Message>
+<Message Type='Informative'>22.469160079956055	14.367249488830566</Message>
+<Message Type='Informative'>22.35851287841797	13.842625617980957</Message>
+<Message Type='Informative'>22.058366775512695	15.818318367004395</Message>
+<Message Type='Informative'>21.862070083618164	15.608588218688965</Message>
+<Message Type='Informative'>{&apos;average_precision_score&apos;: {&apos;Corn&apos;: 0.342967803489703}}</Message>
+<Message Type='Informative'>Detection threshold: 0.2, IOU(Intersection Over Union) threshold: 0.1</Message>
+<Message Type='Informative'>Succeeded at Thursday, July 15, 2021 3:10:45 PM (Elapsed Time: 1 hours 39 minutes 45 seconds)</Message>
+</Messages>
+<EndTime>Thursday, July 15, 2021 1:31:00 PM</EndTime>
+<EndTime>1 hours 39 minutes 45 seconds</EndTime>
+</ResultView>
+<ResultView Tool='Detect Objects Using Deep Learning'>
+<CommandLine>DetectObjectsUsingDeepLearning_ia study_area_3b_final.tif D:\Lizbeth_PT\REEU_Purdue_Summer21\DeepLearning\Deep_Learning_GIS_Project\Deep_Learning_GIS_Project.gdb\Corn_Detection_SSD_25_square D:\Lizbeth_PT\REEU_Purdue_Summer21\DeepLearning\Models\Corn_SSD_25_SquareSamples\Corn_SSD_25_SquareSamples.emd &apos;padding 64;threshold 0.5;nms_overlap 0.1;batch_size 16;exclude_pad_detections True&apos; NO_NMS Confidence Class 0 &apos;Process as mosaicked image&apos;</CommandLine>
+<ToolSource>c:\program files\arcgis\pro\Resources\ArcToolbox\toolboxes\Image Analyst Tools.tbx\Deep Learning\DetectObjectsUsingDeepLearning</ToolSource>
+<StartTime>Friday, July 16, 2021 8:39:10 AM</StartTime>
+<Parameters>
+<Inputs>
+<Parameter Label='Input Raster' Type='Layer'>study_area_3b_final.tif</Parameter>
+<Parameter Label='Model Definition' Type='Dataset'>D:\Lizbeth_PT\REEU_Purdue_Summer21\DeepLearning\Models\Corn_SSD_25_SquareSamples\Corn_SSD_25_SquareSamples.emd</Parameter>
+<Parameter Label='Arguments' Type='Scalar'>padding 64;threshold 0.5;nms_overlap 0.1;batch_size 16;exclude_pad_detections True</Parameter>
+<Parameter Label='Non Maximum Suppression' Type='Scalar'>false</Parameter>
+<Parameter Label='Confidence Score Field' Type='Scalar'>Confidence</Parameter>
+<Parameter Label='Class Value Field' Type='Scalar'>Class</Parameter>
+<Parameter Label='Max Overlap Ratio' Type='Scalar'>0</Parameter>
+<Parameter Label='Processing Mode' Type='Scalar'>PROCESS_AS_MOSAICKED_IMAGE</Parameter>
+</Inputs>
+<Outputs>
+<Parameter Label='Output Detected Objects' Type='Dataset'>D:\Lizbeth_PT\REEU_Purdue_Summer21\DeepLearning\Deep_Learning_GIS_Project\Deep_Learning_GIS_Project.gdb\Corn_Detection_SSD_25_square</Parameter>
+</Outputs>
+<LayerInfo>
+<Layer Name='study_area_3b_final.tif'>D:\Lizbeth_PT\REEU_Purdue_Summer21\DeepLearning\Field_Image\study_area_3b_final.tif\Band_1</Layer>
+</LayerInfo>
+</Parameters>
+<Environments>
+<Environment Label='Auto Commit'>1000</Environment>
+<Environment Label='GPU ID'>0</Environment>
+<Environment Label='Scratch Workspace'>D:\Lizbeth_PT\REEU_Purdue_Summer21\DeepLearning\Deep_Learning_GIS_Project\Deep_Learning_GIS_Project.gdb</Environment>
+<Environment Label='Minimize memory use during analysis on terrains'>false</Environment>
+<Environment Label='Compression'>LZ77</Environment>
+<Environment Label='Coincident Points'>MEAN</Environment>
+<Environment Label='Use Detailed Aggregation'>false</Environment>
+<Environment Label='Random Number Generator'>0 ACM599</Environment>
+<Environment Label='Raster Statistics'>STATISTICS 1 1</Environment>
+<Environment Label='Transfer Geodatabase Field Properties'>false</Environment>
+<Environment Label='Cell Size Projection Method'>CONVERT_UNITS</Environment>
+<Environment Label='Transfer field domain descriptions'>false</Environment>
+<Environment Label='Maintain Attachments'>true</Environment>
+<Environment Label='Resample'>NEAREST</Environment>
+<Environment Label='Match Multidimensional Variable'>true</Environment>
+<Environment Label='Output has Z Values'>Same As Input</Environment>
+<Environment Label='Maintain fully qualified field names'>true</Environment>
+<Environment Label='Tile Size'>128 128</Environment>
+<Environment Label='Pyramid'>PYRAMIDS -1 NEAREST DEFAULT 75 NO_SKIP NO_SIPS</Environment>
+<Environment Label='Union Dimension'>false</Environment>
+<Environment Label='Default TIN Storage Version'>CURRENT</Environment>
+<Environment Label='NoData'>NONE</Environment>
+<Environment Label='Cell Size'>MAXOF</Environment>
+<Environment Label='Output has M Values'>Same As Input</Environment>
+<Environment Label='Cell Alignment'>DEFAULT</Environment>
+<Environment Label='Maintain Spatial Index'>false</Environment>
+<Environment Label='Preserve Global IDs'>false</Environment>
+<Environment Label='Current Workspace'>D:\Lizbeth_PT\REEU_Purdue_Summer21\DeepLearning\Deep_Learning_GIS_Project\Deep_Learning_GIS_Project.gdb</Environment>
+<Environment Label='Output Coordinate System'>PROJCS[&apos;WGS_1984_UTM_Zone_16N&apos;,GEOGCS[&apos;GCS_WGS_1984&apos;,DATUM[&apos;D_WGS_1984&apos;,SPHEROID[&apos;WGS_1984&apos;,6378137.0,298.257223563]],PRIMEM[&apos;Greenwich&apos;,0.0],UNIT[&apos;Degree&apos;,0.0174532925199433]],PROJECTION[&apos;Transverse_Mercator&apos;],PARAMETER[&apos;False_Easting&apos;,500000.0],PARAMETER[&apos;False_Northing&apos;,0.0],PARAMETER[&apos;Central_Meridian&apos;,-87.0],PARAMETER[&apos;Scale_Factor&apos;,0.9996],PARAMETER[&apos;Latitude_Of_Origin&apos;,0.0],UNIT[&apos;Meter&apos;,1.0]]</Environment>
+<Environment Label='Extent'>508084.15992 4460171.49125 508095.07352 4460178.25525</Environment>
+</Environments>
+<Messages>
+<Message Type='Informative'>Start Time: Friday, July 16, 2021 8:39:10 AM</Message>
+<Message Type='Informative'>Succeeded at Friday, July 16, 2021 8:43:08 AM (Elapsed Time: 3 minutes 57 seconds)</Message>
+</Messages>
+<EndTime>Friday, July 16, 2021 8:39:10 AM</EndTime>
+<EndTime>3 minutes 57 seconds</EndTime>
+</ResultView>
